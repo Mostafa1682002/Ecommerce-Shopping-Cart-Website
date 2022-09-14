@@ -1,0 +1,145 @@
+$borderTable:1px solid #e2e9e1;
+.cart-table {
+    padding: 30px;
+    overflow-x: auto;
+    table {
+        text-align: center;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        white-space: nowrap;
+        & td:nth-child(1) {
+            width: 150px;
+        }
+        & td:nth-child(2) {
+            width: 150px;
+        }
+        & td:nth-child(3) {
+            width: 250px;
+        }
+        & td:nth-child(4),
+        & td:nth-child(5),
+        & td:nth-child(6) {
+            width: 150px;
+        }
+        & td:nth-child(5) input {
+            width: 70px;
+            padding: 10px 5px 10px 15px;
+            border: 1px solid;
+        }
+        thead {
+            border: 1px solid #e2e9e1;
+            border-right: 0;
+            border-left: 0;
+            tr {
+                td {
+                    font-size: 15px;
+                    font-weight: 700;
+                    padding: 18px 0;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    padding: 20px 0px 5px;
+                    font-size: 20px;
+                    i {
+                        font-size: 30px;
+                    }
+                    img {
+                        width: 70px;
+                    }
+                    // input {
+                    &:nth-child(3) {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.total {
+    .container {
+        .content-total {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+            .box1 {
+                width: 48%;
+                h3 {
+                    font-size: 23px;
+                    margin: 15px 7px;
+                }
+                form {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    input {
+                        width: 80%;
+                        border: $borderTable;
+                        padding: 10px 15px;
+                        font-size: 18px;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                    }
+                    button {
+                        padding: 12px 15px;
+                        color: #fff;
+                        background-color: var(--second-color);
+                        font-size: 16px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .box2 {
+                width: 48%;
+                border: $borderTable;
+                padding: 20px 15px;
+                h3 {
+                    font-size: 23px;
+                    margin: 15px 0;
+                }
+                table {
+                    width: 100%;
+                    margin-bottom: 25px;
+                    border-collapse: collapse;
+                    table-layout: fixed;
+                    tbody tr td {
+                        border: $borderTable;
+                        padding: 7px 10px;
+                        font-size: 16px;
+                    }
+                    tfoot tr td {
+                        border: $borderTable;
+                        padding: 7px 10px;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+                button {
+                    background-color: #088178;
+                    color: #fff;
+                    padding: 12px 20px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    font-size: 15px;
+                }
+            }
+            @media (max-width:768px) {
+                & {
+                    flex-direction: column;
+                    .box1 {
+                        width: 98%;
+                        margin: auto;
+                    }
+                    .box2 {
+                        width: 98%;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.shop-bage {
+    background-image: url('../images/banner/b1.jpg') !important;
+}
+
+.shop {
+    .container {
+        .content-shop {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 20px;
+            .box {
+                padding: 10px;
+                border-radius: 15px;
+                border: 1px solid var(--second-color);
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 20px 20px 30px rgb(0 0 0 / 6%);
+                }
+                img {
+                    width: 100%;
+                    border-radius: 15px;
+                }
+                >span {
+                    color: var(--second-color);
+                    font-size: 13px;
+                }
+                h3 {
+                    font-size: 18px;
+                    padding: 10px 0;
+                }
+                .content-icons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .text {
+                        .starts {
+                            color: rgb(243, 181, 25);
+                            font-size: 15px;
+                        }
+                        p {
+                            padding: 7px 0;
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: var(--second-color);
+                            del {
+                                font-size: 14px;
+                                color: #777;
+                                text-decoration: line-through;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    .cart {
+                        margin-right: 7px;
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 18px;
+                        border-radius: 50%;
+                        background-color: var(--main-color);
+                        color: var(--second-color);
+                    }
+                }
+            }
+        }
+        .pagination {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul {
+                display: flex;
+                li {
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    background-color: var(--second-color);
+                    font-size: 18px;
+                    margin-right: 5px;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--main-color);
+    &.active {
+        position: fixed;
+        transform: translateY(-100%);
+        animation: top .7s ease forwards;
+    }
+    @keyframes top {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .container {
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // position: relative;
+            nav ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li {
+                    padding: 10px;
+                    font-size: 17px;
+                    a {
+                        padding-bottom: 5px;
+                        color: var(--black-color);
+                    }
+                    &.active a,
+                    & a:hover {
+                        color: var(--second-color);
+                        border-bottom: 3px solid var(--second-color);
+                    }
+                }
+            }
+            .icons {
+                display: none;
+                a {
+                    padding-bottom: 7px;
+                    padding-right: 7px;
+                    font-size: 22px;
+                    color: var(--black-color);
+                    &.cart-act,
+                    &:hover {
+                        color: var(--second-color);
+                        border-bottom: 3px solid var(--second-color);
+                    }
+                }
+                span {
+                    font-size: 25px;
+                    padding-right: 7px;
+                    cursor: pointer;
+                    &:hover {
+                        color: var(--second-color);
+                    }
+                }
+            }
+            @media (max-width:768px) {
+                nav {
+                    position: absolute;
+                    top: -500%;
+                    left: 0;
+                    text-align: center;
+                    width: 100%;
+                    background-color: var(--main-color);
+                    ul {
+                        flex-direction: column;
+                        li {
+                            width: 100%;
+                            padding: 10px 10px 5px;
+                            a {
+                                display: block;
+                                width: 100%;
+                                padding-bottom: 10px;
+                            }
+                            &.active a,
+                            & a:hover {
+                                color: var(--second-color);
+                                border-bottom: 1px solid var(--second-color);
+                            }
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                    }
+                    &.active {
+                        top: 100%;
+                    }
+                }
+                .icons {
+                    display: block;
+                }
+            }
+        }
+    }
+}

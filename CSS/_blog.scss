@@ -1,0 +1,86 @@
+.bog-bage {
+    background-image: url('../images/banner/b19.jpg') !important;
+}
+
+.blog {
+    .container {
+        .content-blog {
+            padding: 100px 0 0 0;
+            width: 100%;
+            .box {
+                display: flex;
+                .imgs {
+                    width: 50%;
+                    position: relative;
+                    h1 {
+                        position: absolute;
+                        top: -50px;
+                        left: 10px;
+                        z-index: -1;
+                        font-size: 70px;
+                        color: #c9cbce;
+                    }
+                    img {
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+                .text {
+                    width: 50%;
+                    padding: 70px 30px;
+                    h3 {
+                        font-size: 23px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        margin-bottom: 30px;
+                        font-size: 16px;
+                        color: #465b52;
+                    }
+                    span {
+                        span {
+                            display: inline-block;
+                            width: 100px;
+                            height: 3px;
+                            background-color: #465b52;
+                        }
+                    }
+                }
+            }
+            @media (max-width:768px) {
+                .box {
+                    flex-direction: column;
+                    .imgs,
+                    .text {
+                        width: 100%;
+                    }
+                    .imgs {
+                        img {
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+        .pagination {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul {
+                display: flex;
+                li {
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    background-color: var(--second-color);
+                    font-size: 18px;
+                    margin-right: 5px;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

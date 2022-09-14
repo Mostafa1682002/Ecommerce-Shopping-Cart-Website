@@ -1,0 +1,58 @@
+.newletters {
+    background-image: url('../images/banner/b2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px 0px;
+    .container {
+        .content-newletter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .text {
+                width: 450px;
+                margin: 30px auto;
+                h3 {
+                    color: #fff;
+                    font-size: 27px;
+                    margin-bottom: 12px;
+                }
+                p {
+                    color: var(--second-color);
+                    span {
+                        color: rgb(243, 181, 25);
+                    }
+                }
+            }
+            form {
+                width: 450px;
+                display: flex;
+                margin: auto;
+                input {
+                    width: 100%;
+                    padding: 15px 25px;
+                    font-size: 16px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                button {
+                    padding: 15px 25px;
+                    color: #fff;
+                    background-color: var(--second-color);
+                    cursor: pointer;
+                    white-space: nowrap;
+                    font-size: 16px;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+            @media (max-width:500px) {
+                .text,
+                form {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

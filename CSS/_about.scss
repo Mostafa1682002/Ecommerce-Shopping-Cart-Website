@@ -1,0 +1,78 @@
+.about-info {
+    .container {
+        .content-info {
+            display: flex;
+            img {
+                width: 50%;
+                height: auto;
+            }
+            .text {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+                .content {
+                    h1 {
+                        font-size: 40px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 1.6;
+                        color: rgb(70, 91, 82);
+                        margin-bottom: 20px;
+                    }
+                    marquee {
+                        margin-top: 60px;
+                        padding: 5px;
+                    }
+                }
+            }
+            @media (max-width:768px) {
+                flex-direction: column;
+                img {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .text {
+                    padding: 10px;
+                    width: 100%;
+                    .content {
+                        h1 {
+                            font-size: 30px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-video {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        h1 {
+            font-size: 40px;
+            color: var(--black-color);
+            padding-bottom: 50px;
+            a {
+                text-decoration: underline;
+            }
+        }
+        .video {
+            max-width: 700px;
+            margin: auto;
+            video {
+                width: 100%;
+            }
+        }
+    }
+}

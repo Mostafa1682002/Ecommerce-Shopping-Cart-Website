@@ -1,0 +1,30 @@
+.frist-bage {
+    background-image: url('../images/about/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+        max-width: 500px;
+        text-align: center;
+        color: #fff;
+        h1 {
+            padding: 10px 0;
+            font-size: 35px;
+        }
+        p {
+            font-size: 18px;
+            padding: 7px 0;
+        }
+        @media (max-width:768px) {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

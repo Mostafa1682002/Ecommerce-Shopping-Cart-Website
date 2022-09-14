@@ -1,0 +1,43 @@
+.banner{
+    background-image: url('../images/banner/b2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container{
+        .content-banner{
+            text-align: center;
+            p{
+                color: #fff;
+                padding: 10px 0;
+            }
+            h1{
+                font-size: 35px;
+                padding: 10px;
+                color: #fff;
+                span{
+                    color: #ef3636;
+                }
+                @media (max-width:768px) {
+                    &{
+                        font-size: 27px;
+                    }
+                }
+            }
+            button{
+                display: inline-block;
+                margin: 10px 0;
+                padding:15px 25px;
+                background-color: #fff;
+                color: var(--black-color);
+                font-weight: 600;
+                font-size: 16px;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover{
+                    background-color: var(--second-color);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

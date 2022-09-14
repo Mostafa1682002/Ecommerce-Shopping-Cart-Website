@@ -1,0 +1,185 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #eaeff4;
+    --second-color: #088178;
+    --black-color: #1a1a1a;
+}
+
+
+/* Media query  */
+
+.container {
+    margin: 0px auto;
+    padding: 15px 10px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    z-index: 4;
+    opacity: 0;
+    background-color: #333333a1;
+    inset: 0;
+    pointer-events: none;
+}
+
+.overlay.active {
+    pointer-events: all;
+    opacity: .7;
+}
+
+section {
+    padding: 40px 0px;
+}
+
+//Title Section
+.title-section {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.title-section h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    .title-section h2 {
+        font-size: 30px;
+    }
+}
+
+.title-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+/*Start Header*/
+
+@import './header';
+
+/*End Header*/
+
+
+/*Start fristPage*/
+
+@import './fristPage';
+
+/*End fristPage*/
+
+
+/*Start Home*/
+
+@import './Home';
+
+/*End Home*/
+
+
+/*Start products*/
+
+@import './products';
+
+/*End products*/
+
+
+/*Start banner*/
+
+@import './banner';
+
+/*End banner*/
+
+
+/*Start arrivals*/
+
+@import './arrivals';
+
+/*End arrivals*/
+
+
+/*Start newletters*/
+
+@import './newletters';
+
+/*End newletters*/
+
+
+/*Start footer*/
+
+@import './footer';
+
+/*End footer*/
+
+
+/*Start about*/
+
+@import './about';
+
+/*End about*/
+
+
+/*Start cart*/
+
+@import './cart';
+
+/*End cart*/
+
+
+/*Start Contact*/
+
+@import './Contact';
+
+/*End Contact*/
+
+
+/*Start blog*/
+
+@import './blog';
+
+/*End blog*/
+
+
+/*Start shop*/
+
+@import './shop';
+
+/*End shop*/
+
+
+/*Start details*/
+
+@import './details';
+
+/*End details*/
