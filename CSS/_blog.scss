@@ -7,7 +7,7 @@
         .content-blog {
             padding: 100px 0 0 0;
             width: 100%;
-            .box {
+            .box-blog{
                 display: flex;
                 .imgs {
                     width: 50%;
@@ -48,7 +48,7 @@
                 }
             }
             @media (max-width:768px) {
-                .box {
+                .box-blog {
                     flex-direction: column;
                     .imgs,
                     .text {
